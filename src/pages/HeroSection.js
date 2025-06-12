@@ -85,7 +85,7 @@ function HeroSection({ showNav, setShowNav }) {
                 <Parallax speed={-20}>
                     <div className="hero-content">
                         <h1>Jatin Arora</h1>
-                        <div>Hello, I am Jatin MERN stack developer. Gaining experience by projects</div>
+                        <div>Hello, I am Jatin MERN stack developer. Gaining experience by working on projects.</div>
                     </div>
                 </Parallax>
             </section>
