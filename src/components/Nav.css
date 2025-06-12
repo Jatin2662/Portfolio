@@ -1,0 +1,165 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--bg-color);
+    /* background-color: var(--nav); */
+    padding: 0.7em;
+    /* width: 100%; */
+    position: sticky;
+    top: 0;
+    z-index: 232;
+    color: var(--text-color);
+    /* color: var(--text-secondary); */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+}
+
+header button {
+    display: none;
+}
+
+header div {
+    flex-grow: 1;
+}
+
+header ul {
+    flex-grow: 2;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+header ul a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+header ul a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.side-nav,
+.nav,
+.head {
+    flex-direction: column;
+    justify-content: unset;
+}
+
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 340;
+}
+
+
+.side-nav {
+    /* height: 100%; */
+    width: 300px;
+    padding: 1em;
+    animation: left 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 343;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* background-color: var(--nav); */
+    /* color: var(--text-secondary); */
+}
+
+.head {
+    flex-grow: 2;
+    width: 100%;
+}
+
+.top {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.top svg {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.top svg:hover {
+    cursor: pointer;
+}
+
+.photo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(60, 60, 60);
+}
+
+.nav {
+    width: 100%;
+    flex-grow: 4;
+    align-items: stretch;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 1em;
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgb(138, 138, 138);
+    transform: scale(1.03);
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 642px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header div {
+        flex-grow: unset;
+    }
+
+    header button {
+        display: block;
+        border: none;
+        cursor: pointer;
+        background-color: gainsboro;
+        padding: 0 3px;
+        border-radius: 5px;
+    }
+
+    header button svg {
+        height: 1.5em;
+        width: 1.5em;
+    }
+}

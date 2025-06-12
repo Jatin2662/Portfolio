@@ -1,0 +1,158 @@
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+    border-bottom: 2px solid white;
+}
+
+/* #about,
+#experience {
+    
+} */
+
+#about {
+    flex-direction: column;
+    color: var(--primary-text);
+}
+
+.hero-content div {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+#about h1 {
+    font-size: 2.5em;
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-background p{
+    position: absolute;
+    /* right: 0; */
+    bottom: 0;
+}
+
+#about h1,
+#about div {
+    /* flex-grow: 1; */
+    align-self: flex-start;
+}
+
+#experience {
+    flex-direction: column;
+    padding: 2em;
+    color: var(--text-color);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    height: auto;
+    gap: 2em;
+}
+
+#experience h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: var(--head-text);
+    border-bottom: 2px solid var(--head-text);
+    padding-bottom: 0.25em;
+}
+
+#experience h2 {
+    font-size: 1.5em;
+    color: #fcd34d;
+}
+
+#experience li {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 0.4em;
+}
+
+#experience>div>div {
+    margin-bottom: 12px;
+    background: var(--surface);
+    padding: 1em 1.5em;
+    border-left: 4px solid var(--head-text);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#experience>div>div:hover {
+    transform: translateY(-4px);
+}
+
+
+#projects {
+    height: auto;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 10px;
+    position: relative;
+}
+
+.ph {
+    width: 100%;
+    justify-content: space-around;
+    margin: 1.5em 0;
+}
+
+.ph h1 {
+    font-size: 2.5em;
+    color: var(--head-text);
+}
+
+.ph a {
+    text-decoration: none;
+    color: rgb(0, 98, 255);
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#contact {
+    height: auto;
+    padding: 2em;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#contact h1 {
+    font-size: 2.5em;
+    color: var(--head-text);
+}
+
+#contact p,
+#contact a {
+    font-size: 1.3em;
+}
+
+#contact a {
+    gap: 0.5em;
+    text-decoration: none;
+}
+
+.copyright{
+    text-align: center;
+    padding: 0.5em;
+}
