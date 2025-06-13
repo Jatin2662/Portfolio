@@ -19,7 +19,8 @@
 
 ## Some more
 - May be adding a skills section ? **true** : **false**
+- Adding **Resume** download option
 
 ## Live Demo Link
 
-[Visit]()
+[Visit](https://jatinaroraportfolio.onrender.com)
