@@ -8,11 +8,6 @@ section {
     border-bottom: 2px solid white;
 }
 
-/* #about,
-#experience {
-    
-} */
-
 #about {
     flex-direction: column;
     color: var(--primary-text);
