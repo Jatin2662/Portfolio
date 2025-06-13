@@ -8,6 +8,7 @@ import { FaLaptop } from "react-icons/fa";
 import { FaInfo } from "react-icons/fa";
 import { FaChartLine } from "react-icons/fa";
 import { MdPermContactCalendar } from "react-icons/md";
+import squirrel from '../assets/squirrel.jpg';
 import './Nav.css'
 
 
@@ -49,8 +50,12 @@ function SideNav({ showNav, setShowNav }) {
                         <span>Portfolio</span>
                         <span><IoClose className="flex" /></span>
                     </div>
-                    <div className="photo"></div>
-                    <p>Jatin Arora</p>
+                    <div className="photo-cont flex" >
+                        <div className="photo flex" >
+                            <img src={squirrel} />
+                        </div>
+                        <p>Jatin Arora</p>
+                    </div>
                 </div>
                 <div className="nav flex">
                     {nav.map((nav) => (
