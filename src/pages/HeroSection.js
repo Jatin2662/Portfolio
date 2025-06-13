@@ -126,7 +126,7 @@ function HeroSection({ showNav, setShowNav }) {
                 <a href="mailto:jatin@example.com" className="email-link">jatinarora4902@gmail.com</a>
 
                 <a href="https://github.com/Jatin2662" target="_blank" rel="noopener noreferrer" className='flex'>
-                    <span><FaGithub /></span>
+                    <span className='flex' ><FaGithub /></span>
                     <span>Github</span>
                 </a>
 
