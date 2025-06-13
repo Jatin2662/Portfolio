@@ -52,7 +52,7 @@ function SideNav({ showNav, setShowNav }) {
                     </div>
                     <div className="photo-cont flex" >
                         <div className="photo flex" >
-                            <img src={squirrel} />
+                            <img src={squirrel} alt="my image" />
                         </div>
                         <p>Jatin Arora</p>
                     </div>
