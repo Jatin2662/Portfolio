@@ -74,7 +74,7 @@ function Nav({ showNav, setShowNav }) {
         <header>
             <button onClick={() => setShowNav(!showNav)} ><IoReorderThree className="flex" /></button>
             <div>
-                Me Jatin
+                Me Jatin Arora
             </div>
             <ul>
                 <li><a href="#" >About</a></li>
