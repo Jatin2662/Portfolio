@@ -10,6 +10,7 @@ import { FaGithub } from "react-icons/fa";
 import SkillContainer from '../components/SkillContainer';
 
 
+
 function HeroSection({ showNav, setShowNav }) {
 
     const experience = [
@@ -173,13 +174,14 @@ function HeroSection({ showNav, setShowNav }) {
         <div>
             {showNav && <SideNav showNav={showNav} setShowNav={setShowNav} />}
             <section id='about' className='hero-section'>
-                <div className="video-background">
+                {/* <div className="video-background">
                     <video autoPlay muted loop>
                         <source src="/assets/wind.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                     <p>Video by  Damir K . from Pexels: https://www.pexels.com/video/black-and-white-wind-turbines-in-field-32391111/</p>
-                </div>
+                </div> */}
+                {/* < img src={meBg} /> */}
                 <Parallax speed={-20}>
                     <div className="hero-content">
                         <h1>Jatin Arora</h1>
