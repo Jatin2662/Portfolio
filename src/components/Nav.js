@@ -9,7 +9,6 @@ import { FaInfo } from "react-icons/fa";
 import { FaChartLine } from "react-icons/fa";
 import { MdPermContactCalendar } from "react-icons/md";
 import { FaCogs } from "react-icons/fa";
-import squirrel from '../assets/squirrel.jpg';
 import me from '../assets/me.jpg'
 import './Nav.css'
 
