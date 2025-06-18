@@ -8,6 +8,7 @@ import { FaLaptop } from "react-icons/fa";
 import { FaInfo } from "react-icons/fa";
 import { FaChartLine } from "react-icons/fa";
 import { MdPermContactCalendar } from "react-icons/md";
+import { FaCogs } from "react-icons/fa";
 import squirrel from '../assets/squirrel.jpg';
 import './Nav.css'
 
@@ -30,12 +31,18 @@ function SideNav({ showNav, setShowNav }) {
         },
         {
             id: 3,
+            title: 'Skills',
+            path: '#skills',
+            icon: <FaCogs />
+        },
+        {
+            id: 4,
             title: 'Projects',
             path: '#projects',
             icon: <FaLaptop />
         },
         {
-            id: 4,
+            id: 5,
             title: 'Contact',
             path: '#contact',
             icon: <MdPermContactCalendar />
@@ -79,6 +86,7 @@ function Nav({ showNav, setShowNav }) {
             <ul>
                 <li><a href="#" >About</a></li>
                 <li><a href="#experience" >Experience</a></li>
+                <li><a href="#skills" >Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact" >Contact</a></li>
             </ul>
