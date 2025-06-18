@@ -11,14 +11,13 @@
 - run `npm install`
 - run `npm start`
 
-## Technology Used
+## Technology, Libraries Used
 - React
 - Parallax
 - Framer motion
 - Mobile responsive
 
 ## Some more
-- May be adding a skills section ? **true** : **false**
 - Adding **Resume** download option
 
 ## Live Demo Link
