@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Projects from '../components/Projects';
 import { SideNav } from '../components/Nav';
 import { FaGithub } from "react-icons/fa";
+import SkillContainer from '../components/SkillContainer';
 
 
 function HeroSection({ showNav, setShowNav }) {
@@ -71,6 +72,103 @@ function HeroSection({ showNav, setShowNav }) {
         },
     ]
 
+    const skills = [
+        {
+            type: 'Frontend',
+            stack: [
+                {
+                    id: 1,
+                    title: "HTML",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+                    alt: 'html',
+                    position: 'left'
+                },
+                {
+                    id: 2,
+                    title: "CSS",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+                    alt: 'css',
+                    position: 'top'
+                },
+                {
+                    id: 3,
+                    title: "JavaScript",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+                    alt: 'javascript',
+                    position: 'bottom'
+                },
+                {
+                    id: 4,
+                    title: "React",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+                    alt: 'react',
+                    position: 'right'
+                },
+            ]
+        },
+        {
+            type: 'Backend',
+            stack: [
+                {
+                    id: 1,
+                    title: "Node.js",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+                    alt: 'node.js',
+                    position: 'left'
+                },
+                {
+                    id: 2,
+                    title: "Express.js",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+                    alt: 'express.js',
+                    position: 'top'
+                },
+                {
+                    id: 3,
+                    title: "MongoDB",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+                    alt: 'monogDB',
+                    position: 'bottom'
+                },
+                {
+                    id: 4,
+                    title: "Mongoose",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original-wordmark.svg",
+                    alt: 'mongoose',
+                    position: 'right'
+
+                }
+
+            ]
+        },
+        {
+            type: 'Tools',
+            stack: [
+                {
+                    id: 1,
+                    title: "Postman",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+                    alt: 'postman',
+                    position: 'left'
+                },
+                {
+                    id: 2,
+                    title: "Git",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+                    alt: 'git',
+                    position: 'bottom'
+                },
+                {
+                    id: 3,
+                    title: "VS Code",
+                    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+                    alt: 'vs code',
+                    position: 'right'
+                },
+            ]
+        }
+    ]
+
     return (
         <div>
             {showNav && <SideNav showNav={showNav} setShowNav={setShowNav} />}
@@ -109,6 +207,21 @@ function HeroSection({ showNav, setShowNav }) {
                     ))}
                 </motion.div>
 
+            </section>
+            <section id='skills'>
+                <h1>Skills</h1>
+
+                <div className='skills-nav'>
+                    {skills.map((sk) => (
+                    <div className='single-skill flex'>
+                        <h2>{sk.type}</h2>
+                        <div>{sk.stack.map((sks)=>(
+                            <SkillContainer position={sks.position} link={sks.link} title={sks.title} alt={sks.alt} />
+                        ))}</div>
+                    </div>
+                ))}
+                </div>
+                
             </section>
             <section id='projects' >
                 <div className='ph flex' >
