@@ -10,6 +10,7 @@ import { FaChartLine } from "react-icons/fa";
 import { MdPermContactCalendar } from "react-icons/md";
 import { FaCogs } from "react-icons/fa";
 import squirrel from '../assets/squirrel.jpg';
+import me from '../assets/me.jpg'
 import './Nav.css'
 
 
@@ -59,7 +60,7 @@ function SideNav({ showNav, setShowNav }) {
                     </div>
                     <div className="photo-cont flex" >
                         <div className="photo flex" >
-                            <img src={squirrel} alt="my image" />
+                            <img src={me} alt="my image" />
                         </div>
                         <p>Jatin Arora</p>
                     </div>
