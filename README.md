@@ -17,9 +17,6 @@
 - Framer motion
 - Mobile responsive
 
-## Some more
-- Adding **Resume** download option
-
 ## Live Demo Link
 
 [Visit](https://jatinaroraportfolio.onrender.com)
