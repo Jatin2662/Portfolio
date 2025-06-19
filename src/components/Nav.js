@@ -9,6 +9,7 @@ import { FaInfo } from "react-icons/fa";
 import { FaChartLine } from "react-icons/fa";
 import { MdPermContactCalendar } from "react-icons/md";
 import { FaCogs } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 import me from '../assets/me.jpg'
 import './Nav.css'
 
@@ -69,6 +70,7 @@ function SideNav({ showNav, setShowNav }) {
                         <a href={nav.path} key={nav.id} className="nav-link" onClick={() => setShowNav(!showNav)}>{nav.icon}{nav.title}</a>
                     ))}
                 </div>
+                <a href='/assets/JatinArora_Resume.pdf' className="nav-link" download="JatinArora_Resume"><FiDownload /> Download Resume</a>
             </div>
         </div>
     );
@@ -89,6 +91,7 @@ function Nav({ showNav, setShowNav }) {
                 <li><a href="#skills" >Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact" >Contact</a></li>
+                <li><a href='/assets/JatinArora_Resume.pdf' download >Download</a></li>
             </ul>
         </header>
     );
