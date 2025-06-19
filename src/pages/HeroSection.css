@@ -65,13 +65,13 @@ section {
 }
 @media screen and (max-width: 700px) {
     .message-box {
-        right: 12%;
+        right: 11%;
     }
 }
 @media screen and (max-width: 400px) {
     .message-box {
         top: 12%;
-        right: 8%;
+        right: 6%;
     }
 }
 
