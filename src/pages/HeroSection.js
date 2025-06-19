@@ -2,7 +2,7 @@
 
 import { Parallax } from 'react-scroll-parallax';
 import './HeroSection.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Projects from '../components/Projects';
 import { SideNav } from '../components/Nav';
@@ -170,6 +170,9 @@ function HeroSection({ showNav, setShowNav }) {
         }
     ]
 
+    // const [type, setType] = useState('Frontend');
+    // const selectedSkills = skills.find(skill => skill.type === type)?.stack || [];
+
     return (
         <div>
             {showNav && <SideNav showNav={showNav} setShowNav={setShowNav} />}
@@ -215,15 +218,27 @@ function HeroSection({ showNav, setShowNav }) {
 
                 <div className='skills-nav'>
                     {skills.map((sk) => (
-                    <div className='single-skill flex'>
-                        <h2>{sk.type}</h2>
-                        <div>{sk.stack.map((sks)=>(
-                            <SkillContainer position={sks.position} link={sks.link} title={sks.title} alt={sks.alt} />
-                        ))}</div>
-                    </div>
-                ))}
+                        <div className='single-skill flex'>
+                            <h2>{sk.type}</h2>
+                            <div>{sk.stack.map((sks) => (
+                                <SkillContainer position={sks.position} link={sks.link} title={sks.title} alt={sks.alt} />
+                            ))}</div>
+                        </div>
+                    ))}
                 </div>
-                
+
+                {/* <div className='selectable flex'>
+                    <div className='select flex' >
+                        <span onClick={() => setType('Frontend')} className={`${type === 'Frontend' ? type : ''} ` }>Frontend</span>
+                        <span onClick={() => setType('Backend')} className={`${type === 'Backend' ? type : ''} ` }>Backend</span>
+                        <span onClick={() => setType('Tools')} className={`${type === 'Tools' ? type : ''} ` }>Tools</span>
+                    </div>
+                    <div>
+                        {selectedSkills.map((s) => (
+                            <SkillContainer position={s.position} link={s.link} title={s.title} alt={s.alt} />
+                        ))}
+                    </div>
+                </div> */}
             </section>
             <section id='projects' >
                 <div className='ph flex' >

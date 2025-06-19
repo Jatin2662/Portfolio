@@ -160,7 +160,8 @@ section {
 
 #skills{
     flex-direction: column;
-    justify-content: space-evenly;
+    height: auto;
+    gap: 2em;
 }
 
 #skills h1{
@@ -189,3 +190,48 @@ section {
     gap: 12px;
     /* background-color: #ffffff; */
 }
+
+/* .selectable{
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    display: none;
+    gap: 2em;
+}
+
+.select{
+    width: 100%;
+    justify-content: space-between;
+    height: 10%;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 7px;
+}
+
+.select span{
+    cursor: pointer;
+    padding: 0.3em 0.5em;
+}
+
+.Frontend,
+.Backend,
+.Tools{
+    box-shadow: 0px 0px 7px 2px white;
+}
+
+.selectable div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    width: 100%;
+    gap: 12px;
+}
+
+@media screen and (max-width: 671px) {
+    .skills-nav{
+        display: none;
+    }
+    .selectable{
+        display: flex;
+    }
+} */
