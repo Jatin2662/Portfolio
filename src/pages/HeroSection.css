@@ -64,7 +64,7 @@ section {
 #about {
     flex-direction: column;
     color: var(--head-text);
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .hero-content div {
