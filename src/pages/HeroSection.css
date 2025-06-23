@@ -11,8 +11,9 @@ section {
 
 .message-box {
     position: absolute;
-    top: 10px;
-    right: 35%;
+    top: 25px;
+    transform: translateX(-50%);
+    left: 50%;
     background-color: var(--surface);
     color: var(--head-text);
     font-weight: 600;
@@ -21,9 +22,21 @@ section {
     word-break: keep-all;
     padding: 1em;
     text-align: center;
-    border-bottom-left-radius: 0px;
-    transform: translateX(-50%);
+    /* border-bottom-left-radius: 0px; */
     animation: InOut 3s ease-in-out;
+}
+
+.message-box::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    transform: translateX(-50%);
+    left: 50%;
+    /* width: 0;
+    height: 0; */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--surface);
 }
 
 @keyframes InOut {
@@ -48,36 +61,11 @@ section {
     }
 }
 
-@media screen and (max-width: 1267px) {
-    .message-box {
-        right: 30%;
-    }
-}
-@media screen and (max-width: 1114px) {
-    .message-box {
-        right: 25%;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .message-box {
-        right: 22%;
-    }
-}
-@media screen and (max-width: 700px) {
-    .message-box {
-        right: 11%;
-    }
-}
-@media screen and (max-width: 400px) {
-    .message-box {
-        top: 12%;
-        right: 6%;
-    }
-}
-
 #about {
     flex-direction: column;
     color: var(--head-text);
+    /* justify-content: space-around; */
+    gap: 2em;
 }
 
 .hero-content div {
@@ -93,11 +81,45 @@ section {
 .hero-section {
     position: relative;
 
-    background-image: url('../assets//meBg.png');
+    /* background-image: url('../assets//meBg.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
+
+}
+
+#about h1,
+#about div {
+    /* flex-grow: 1; */
+    align-self: flex-start;
+}
+
+.pp {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    align-self: center !important;
+    /* border-bottom: 4px solid var(--head-text); */
+    box-shadow: 0px 7px 13px 6px var(--head-text);
+}
+
+.pp img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .pp {
+        height: 200px;
+        width: 200px;
+    }
+
+    .pp img {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 
@@ -121,12 +143,6 @@ section {
     position: absolute;
     bottom: 0;
 } */
-
-#about h1,
-#about div {
-    /* flex-grow: 1; */
-    align-self: flex-start;
-}
 
 #experience {
     flex-direction: column;

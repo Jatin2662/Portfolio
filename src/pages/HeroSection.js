@@ -10,17 +10,18 @@ import { FaGithub } from "react-icons/fa";
 import SkillContainer from '../components/SkillContainer';
 import { experience, projects, skills } from '../Data';
 import MessageBox from '../components/MessageBox';
+import PP from '../assets/PP.png';
 
 
 function HeroSection({ showNav, setShowNav }) {
 
-    const [ showMessage, setShowMessage ] = useState(false);
+    const [showMessage, setShowMessage] = useState(false);
 
     // const [type, setType] = useState('Frontend');
     // const selectedSkills = skills.find(skill => skill.type === type)?.stack || [];
 
-    useEffect(()=>{
-        const timer = setTimeout(()=>{
+    useEffect(() => {
+        const timer = setTimeout(() => {
             setShowMessage(true);
         }, 1500);
 
@@ -31,7 +32,7 @@ function HeroSection({ showNav, setShowNav }) {
         <div>
             {showNav && <SideNav showNav={showNav} setShowNav={setShowNav} />}
             <section id='about' className='hero-section'>
-                {showMessage && <MessageBox text="Scroll Down" showMessage={showMessage} setShowMessage={setShowMessage} />}
+                {showMessage && <MessageBox text="Hello there," showMessage={showMessage} setShowMessage={setShowMessage} />}
                 {/* <div className="video-background">
                     <video autoPlay muted loop>
                         <source src="/assets/wind.mp4" type="video/mp4" />
@@ -40,6 +41,9 @@ function HeroSection({ showNav, setShowNav }) {
                     <p>Video by  Damir K . from Pexels: https://www.pexels.com/video/black-and-white-wind-turbines-in-field-32391111/</p>
                 </div> */}
                 {/* < img src={meBg} /> */}
+                <div className="pp flex">
+                    < img src={PP} />
+                </div>
                 <Parallax speed={-20}>
                     <div className="hero-content">
                         <h1>Jatin Arora</h1>
