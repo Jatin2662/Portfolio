@@ -64,8 +64,7 @@ section {
 #about {
     flex-direction: column;
     color: var(--head-text);
-    /* justify-content: space-around; */
-    gap: 2em;
+    justify-content: space-around;
 }
 
 .hero-content div {
